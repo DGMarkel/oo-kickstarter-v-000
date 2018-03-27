@@ -8,7 +8,7 @@ attr_accessor :title, :backers, :backed_projects
 
   def add_backer(backer)
     @backers << backer
-    @backed_projects << self
+    backer.backed_projects << self
   end
 
 end
